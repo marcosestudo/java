@@ -3,7 +3,10 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		System.out.println("HELLO WOLRD!");
+		int x = 12;
+		
+		System.out.println(x);
+		System.out.print("HELLO WOLRD!");
  
 	}
 
