@@ -21,7 +21,7 @@ public class Main {
 		} else {
 			System.out.println("Você não digitou nem um, nem 2");
 		}
-
+		
 		sc.close();
 
 	}
