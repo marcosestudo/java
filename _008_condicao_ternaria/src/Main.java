@@ -2,6 +2,7 @@
 public class Main {
 
 	public static void main(String[] args) {
+		
 //		double preco = 34.5;
 //		double desconto;
 //		
