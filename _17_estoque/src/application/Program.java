@@ -1,11 +1,9 @@
-package aplication;
+package application;
 
 import java.util.Locale;
 import java.util.Scanner;
 
 import entities.Product;
-
-
 
 public class Program {
 
@@ -28,11 +26,13 @@ public class Program {
 		// podemos só colocar o nome do objeto
 		System.out.println(product1);
 		
-		System.out.print("\nQuantidade a ser adicionada ao estoque: ");
+		System.out.println();
+		System.out.print("Quantidade a ser adicionada ao estoque: ");
 		product1.addProducts(sc.nextInt());
 		System.out.println(product1);
 		
-		System.out.print("\nQuantidade a ser removida do estoque: ");
+		System.out.println();
+		System.out.print("Quantidade a ser removida do estoque: ");
 		product1.removeProducts(sc.nextInt());
 		// Sem o toString, o print ficaria assim
 		System.out.printf("%s, $%.2f, %d unidades, total: $%.2f%n%n", product1.name, product1.price, product1.quantity, product1.totalValueInStock());
