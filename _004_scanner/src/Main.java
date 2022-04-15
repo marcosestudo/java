@@ -36,7 +36,7 @@ public class Main {
 		
 		// quebra de linha pendente		
 		// quando damos enter pro nextInt(), a quebra de linha do enter fica pendente na entrada padrão 
-		// o próximo nextLine() consom eessa quebra de linha
+		// o próximo nextLine() consome essa quebra de linha
 		// a solução é colocar um nextline() depois de um nextInt() ou next() 
 		int x2 = sc. nextInt();
 		sc.nextLine();
