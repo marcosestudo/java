@@ -23,15 +23,18 @@ public class Program {
 		product1.price = sc.nextDouble();
 		System.out.print("Quantidade: ");
 		product1.quantity = sc.nextInt();
+				
+		// O java reconhece que o objeto está dentro de um print e a função toStrin() será usda implicitamente
+		// podemos só colocar o nome do objeto
+		System.out.println(product1);
 		
-		System.out.printf("%s, $%.2f, %d unidades, total: $%.2f%n%n", product1.name, product1.price, product1.quantity, product1.totalValueInStock());
-		
-		System.out.print("Quantidade a ser adicionada ao estoque: ");
+		System.out.print("\nQuantidade a ser adicionada ao estoque: ");
 		product1.addProducts(sc.nextInt());
-		System.out.printf("%s, $%.2f, %d unidades, total: $%.2f%n%n", product1.name, product1.price, product1.quantity, product1.totalValueInStock());
+		System.out.println(product1);
 		
-		System.out.print("Quantidade a ser removida do estoque: ");
+		System.out.print("\nQuantidade a ser removida do estoque: ");
 		product1.removeProducts(sc.nextInt());
+		// Sem o toString, o print ficaria assim
 		System.out.printf("%s, $%.2f, %d unidades, total: $%.2f%n%n", product1.name, product1.price, product1.quantity, product1.totalValueInStock());
 		
 		sc.close();
