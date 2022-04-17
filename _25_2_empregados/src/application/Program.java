@@ -67,6 +67,6 @@ public class Program {
 
 	public static boolean hasId(List<Employee> list, int id) {
 		Employee emp = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
-		return emp != null; // Se o id existir, emp não será null e retornará true dizendo que um funcionário com este id já existe
+		return emp != null; // Se o id existir, emp não será null, retornará true dizendo que um funcionário com este id já existe
 	}
 }
