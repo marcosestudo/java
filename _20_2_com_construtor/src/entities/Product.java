@@ -30,6 +30,8 @@ public class Product {
 	// getters e setters, por convenção vêm depois dos construtores
 	// podem ser gerados automaticamente clicando com o 
 	// botão direito > source > generate getters and setters
+	// dessa forma tambpem podemos gerar construtores
+	// botão direito > source > generate constructors using fields
 	public String getName() {
 		return name;
 	}
