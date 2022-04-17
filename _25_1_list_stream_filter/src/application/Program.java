@@ -7,6 +7,13 @@ import java.util.stream.Collectors;
 public class Program {
 	public static void main(String[] args) {
 
+		// List não aceita tipo primitivo
+		// Tentando criar um alista de <int> dá erro, descomente a linha abaixo pra ver
+		// List<int> nums = new ArrayList<>(); 
+		// Devemos usar a wrapper correspondente, neste caso, a wrapper class Integer
+		List<Integer> nums = new ArrayList<>(); // Neste exercício usaremos uma lista de String, que não precisa de wrapper class
+		// A lista de inteiros acima foi criada para ficar como lembrança da necessidade das wrapper classes
+		
 		List<String> list = new ArrayList<>();
 		list.add("Maria");
 		list.add("Alex");
