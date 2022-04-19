@@ -1,0 +1,15 @@
+package application;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		// boxing
+		int n = 20;
+		// Estamos "transformando" o n que é um int (tipo valor) em um o objeto do tipo
+		// Objeto (tipo referência), quando fazemos isso dizemos que estamos encaixotando
+		Object obj = n;
+		// Obs: todas as classes herdam da classe Object
+	}
+
+}

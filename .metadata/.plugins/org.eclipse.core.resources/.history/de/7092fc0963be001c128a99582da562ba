@@ -1,0 +1,12 @@
+package application;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		// List é uma interface, não permite instanciação como as classes
+		// listas não aceitam tipos primitivos, devemos usar wrapper classes
+		List <Integer> 
+	}
+
+}

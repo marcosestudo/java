@@ -1,0 +1,12 @@
+package entities;
+
+public class Product {
+	
+	name;
+	price;
+	
+	
+	public Product() {
+
+	}
+}

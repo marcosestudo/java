@@ -1,0 +1,69 @@
+package entities;
+
+public class Product {
+
+	private String name;
+	private double price;
+	private int quantity;
+
+	// Construtor padrão
+	public Product() {
+	}
+
+	public Product(String name, double price, int quantity) {
+		this.name = name;
+		this.price = price;
+		this.quantity = quantity;
+	}
+
+	// Sobrecarga: podemos criar mais de um método com o mesmo nome, com parâmetros
+	// diferentes
+	public Product(String name, double price) {
+		this.name = name;
+		this.price = price;
+		// por padrão, int é iniciado com 0, tornando desnecessária a atribuição abaixo
+		// deixei aqui só pra ficar registrado
+		quantity = 0;
+	}
+
+	// geters e seters
+	// geters e seters, por convenção vêm depois dos construtores
+	// podem ser gerados automaticamente clicando com o 
+	// botão direito > source > generate getter
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public double totalValueInStock() {
+		return price * quantity;
+	}
+
+	public void addProducts(int quantity) {
+		this.quantity += quantity;
+	}
+
+	public void removeProducts(int quantity) {
+		this.quantity -= quantity;
+	}
+
+	public String toString() {
+		return name + ", $ " + String.format("%.2f", price) + ", " + quantity + " units, Total: $ "
+				+ String.format("%.2f", totalValueInStock());
+	}
+}
