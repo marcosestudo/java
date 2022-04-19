@@ -1,0 +1,11 @@
+package util;
+
+public class Calculator {
+	
+	// Declaração da constante PI > public static final double PI = 3.14
+	// Por padrão, no Java, constantes são escritas com letras maiúsculas
+	// O final é usado pra dizer que não será mudado
+	
+	
+	
+}

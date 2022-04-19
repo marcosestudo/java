@@ -1,0 +1,23 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// membros estáticos podem ser chamados de membros de classe
+		// Não precisam de instanciados para serem usador
+		// Como exemplo de mebro estático temos a função Math.sqrt()
+		// declaração de constante > public static final 
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		
+		
+		
+		sc.close();
+	}
+
+}

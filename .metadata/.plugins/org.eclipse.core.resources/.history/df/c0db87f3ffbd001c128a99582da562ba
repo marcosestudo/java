@@ -1,0 +1,34 @@
+package application;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		// boxing
+		int x = 20;
+		// Estamos "transformando" o n que é um int (tipo valor) em um o objeto do tipo
+		// Objeto (tipo referência), quando fazemos isso dizemos que estamos
+		// encaixotando em um objeto
+		Object obj = x;
+		// Obs: todas as classes herdam da classe Object
+		System.out.println(obj);
+		
+		// unboxing
+		int y = (int) obj; // Devemos fazer o cast pra converter do tipo Object pra int
+		System.out.println(y);
+		
+		// Wrapper classes
+		// Para cada tipo primitivo, o Java tem uma wrapper class
+		// primitivo  |   wrapper class
+		// byte 	  |	  Byte 
+		// shortS	  |	  short 
+		// int 		  |   Integer
+		// long 	  |	  Long
+		// float	  |	  Float
+		// double 	  |	  Double
+		// boolean	  |	  Boolean
+		// char		  |	  Character
+		
+	}
+
+}

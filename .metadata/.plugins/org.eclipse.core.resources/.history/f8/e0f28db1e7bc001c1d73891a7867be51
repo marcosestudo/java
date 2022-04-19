@@ -1,0 +1,28 @@
+package entities;
+
+public class Product {
+
+	public String name;
+	public Double price;
+	public int quantity;
+
+	public double totalValueInStock() {
+		return price * quantity;
+	}
+
+	public void addProducts(int quantity) {
+		this.quantity += quantity;
+	}
+
+	public void removeProducts(int quantity) {
+		this.quantity -= quantity;
+	}
+
+	// Toda classe java herda da classe Object
+	// Aqui estamos sobrescrevendo a função toString(), uma das funções da classe
+	// Object
+
+	public String toString() {
+		return "%s, $%.2f, %d unidades, total: $%.2f%n%n", name, price, quantity, totalValueInStock();	
+	}
+}

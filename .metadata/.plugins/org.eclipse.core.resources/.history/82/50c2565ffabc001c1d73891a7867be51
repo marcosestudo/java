@@ -1,0 +1,26 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// membros estáticos podem ser chamados de membros de classe
+		// Não precisam de instanciados para serem usador
+		// Como exemplo de mebro estático temos a função Math.sqrt()
+		
+		// Declaração da constante PI > public static final double PI = 3.14
+		// Por padrão, no Java, constantes são escritas com letras maiúsculas
+		// O final é usado pra dizer que não será mudado
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		
+		
+		
+		sc.close();
+	}
+
+}

@@ -1,0 +1,14 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		// Matrizes são vetores de duas dimensões, vetores de vetores
+		List<List<Integer>> vect = new ArrayList<>();
+	}
+
+}
